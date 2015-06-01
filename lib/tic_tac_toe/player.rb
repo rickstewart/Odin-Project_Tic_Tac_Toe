@@ -1,11 +1,11 @@
 class Player
 
-  attr_accessor :player_name, :x_or_o
+  attr_accessor :player_name, :game_piece
   @player_moves = []
 
-  def initialize(name, piece)
+  def initialize(name, x_or_o)
     player_name = name
-    x_or_o = piece
+    game_piece = x_or_o
   end
 
   def add_move(move)
