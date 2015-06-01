@@ -15,9 +15,17 @@ class Main
     # loop until game is finished
     while true
       puts "#{player1.player_name} -playing X- its your move. Pick a square: "
-    if Moves.valid_move?(gets move)
-
-    end
+      move = gets move
+      if Moves.valid_move?(move)
+        baord.update_square(move,player1.game_piece)
+        player1.add_move(move)
+        board.draw_board
+        if Moves.winning_move?player1.player_moves
+          return player1.player_name + " Wins!"
+        end
+      else
+        puts "Illegal move! Please pick one of the remaining possible moves: " + Moves.valid_moves
+      end
     end
   end
 end

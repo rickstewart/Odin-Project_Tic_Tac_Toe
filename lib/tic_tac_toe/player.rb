@@ -11,4 +11,8 @@ class Player
   def add_move(move)
     @player_moves << move
   end
+
+  def player_moves
+    @player_moves
+  end
 end
