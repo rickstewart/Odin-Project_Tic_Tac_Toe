@@ -4,15 +4,15 @@ class GameBoard
 
   def initialize
 
-    pos1 = 1
-    pos2 = 2
-    pos3 = 3
-    pos4 = 4
-    pos5 = 5
-    pos6 = 6
-    pos7 = 7
-    pos8 = 8
-    pos9 = 9
+    @pos1 = '1'
+    @pos2 = '2'
+    @pos3 = '3'
+    @pos4 = '4'
+    @pos5 = '5'
+    @pos6 = '6'
+    @pos7 = '7'
+    @pos8 = '8'
+    @pos9 = '9'
 
   end
 
@@ -30,23 +30,23 @@ class GameBoard
   def update_square(move, x_or_o)
     case move
       when 1 then
-        pos1 = x_or_o
+        @pos1 = x_or_o
       when 2 then
-        pos2 = x_or_o
+        @pos2 = x_or_o
       when 3 then
-        pos3 = x_or_o
+        @pos3 = x_or_o
       when 4 then
-        pos4 = x_or_o
+        @pos4 = x_or_o
       when 5 then
-        pos5 = x_or_o
+        @pos5 = x_or_o
       when 6 then
-        pos6 = x_or_o
+        @pos6 = x_or_o
       when 7 then
-        pos7 = x_or_o
+        @pos7 = x_or_o
       when 8 then
-        pos8 = x_or_o
+        @pos8 = x_or_o
       when 9 then
-        pos9 = x_or_o
+        @pos9 = x_or_o
     end
   end
 end
