@@ -30,7 +30,7 @@ class Main
         break
       end
       if Moves.valid_moves.size ==0
-        "Its a tie! Game over..."
+        puts "Its a tie! Game over..."
         break
       end
       while true
@@ -50,7 +50,7 @@ class Main
         break
       end
       if Moves.valid_moves.size ==0
-        "Its a tie! Game over..."
+        puts "Its a tie! Game over..."
         break
       end
     end

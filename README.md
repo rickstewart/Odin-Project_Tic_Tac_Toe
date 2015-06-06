@@ -8,20 +8,11 @@
 
 http://www.theodinproject.com/ruby-programming/advanced-building-blocks?ref=lnav
 
-<h3>Project 1: Tic Tac Toe</h3>
+<h3>Project 1: Tic Tac Toe</h3></br>
 
-<h6>.</h6>
+<h6>This is a Ruby implementation of the Tic Tac Toe game played in a Terminal Window</h6></br>
 
-<h3>/h3>
+<h6>To play, go to the lib folder and type ruby tic_tac_toe.rb and hit enter.</h6>
 
-<h6></h6>
-
-<h3></h3>
-
-<h6></h6>
-
-<h2>How to run the tests.</h2>
-
-<h6></h6>
 </body>
 </html>

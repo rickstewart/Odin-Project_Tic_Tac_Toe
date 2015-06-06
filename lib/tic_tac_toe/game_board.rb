@@ -1,5 +1,7 @@
 class GameBoard
 
+  require 'colorize'
+
   attr_accessor :pos1, :pos2, :pos3, :pos4, :pos5, :pos6, :pos7, :pos8, :pos9
 
   def initialize
@@ -17,14 +19,13 @@ class GameBoard
   end
 
   def draw_board
-
-    puts "\u250e\u2509\u2509\u2509\u2509\u2509\u2509\u2509\u2512"
-    puts "\u250b #{pos7} \u250b #{pos8} \u250b #{pos9} \u250b"
-    puts "\u2522\u2509\u2509\u2509\u2509\u2509\u2509\u2509\u252b"
-    puts "\u250b #{pos4} \u250b #{pos5} \u250b #{pos6} \u250b"
-    puts "\u2522\u2509\u2509\u2509\u2509\u2509\u2509\u2509\u252b"
-    puts "\u250b #{pos1} \u250b #{pos2} \u250b #{pos3} \u250b"
-    puts "\u2516\u2509\u2509\u2509\u2509\u2509\u2509\u2509\u251a"
+    puts "\u250e\u2509\u2509\u2509\u2509\u2509\u2509\u2509\u2512".colorize(:color => :green, :background => :light_white)
+    puts "\u250b #{pos7} \u250b #{pos8} \u250b #{pos9} \u250b".colorize(:color => :green, :background => :light_white)
+    puts "\u2522\u2509\u2509\u2509\u2509\u2509\u2509\u2509\u252b".colorize(:color => :green, :background => :light_white)
+    puts "\u250b #{pos4} \u250b #{pos5} \u250b #{pos6} \u250b".colorize(:color => :green, :background => :light_white)
+    puts "\u2522\u2509\u2509\u2509\u2509\u2509\u2509\u2509\u252b".colorize(:color => :green, :background => :light_white)
+    puts "\u250b #{pos1} \u250b #{pos2} \u250b #{pos3} \u250b".colorize(:color => :green, :background => :light_white)
+    puts "\u2516\u2509\u2509\u2509\u2509\u2509\u2509\u2509\u251a".colorize(:color => :green, :background => :light_white)
   end
 
   def update_square(move, x_or_o)
