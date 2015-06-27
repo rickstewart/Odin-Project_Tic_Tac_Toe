@@ -2,6 +2,7 @@ class Main
   require_relative "game_board"
   require_relative "moves"
   require_relative "player"
+  require "colorize"
 
   def go
     board = GameBoard.new
@@ -29,12 +30,12 @@ class Main
         puts player1.player_name + " Wins! Game over..."
         break
       end
-      if Moves.valid_moves.size ==0
+      if Moves.valid_moves.size == 0
         puts "Its a tie! Game over..."
         break
       end
       while true
-        puts "#{player2.player_name} (you'll be X), its your move. Pick a square: "
+        puts "#{player2.player_name} (you'll be O), its your move. Pick a square: "
         move = gets.chomp.to_i
         if Moves.valid_move?(move)
           board.update_square(move, player2.game_piece)
@@ -49,7 +50,7 @@ class Main
         puts player2.player_name + " Wins! Game over..."
         break
       end
-      if Moves.valid_moves.size ==0
+      if Moves.valid_moves.size == 0
         puts "Its a tie! Game over..."
         break
       end
